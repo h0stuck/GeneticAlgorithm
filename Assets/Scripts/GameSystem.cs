@@ -30,6 +30,9 @@ public class GameSystem : MonoBehaviour
         instance = this;
         genetic = new Genetic(10);
         fastestDis = 100000f;
+        disText.text = string.Format("Fitness : {0:0.000}", genetic.optimumFitness);
+        genText.text = string.Format("Generation : {0}", genetic.Generation);
+        seqText.text = " 4, 0, 8, 1, 7, 3, 2, 6, 9, 5 }";
         FirstDraw();
     }
 

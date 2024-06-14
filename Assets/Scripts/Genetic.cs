@@ -47,7 +47,7 @@ namespace Genetic_Algorithm
         public Genetic(int nodeCounts)
         {
             this.NodeCounts = nodeCounts;
-            Debug.Log("genetic");
+            Debug.Log("gene start");
             reset();
         }
         //---------------------------------------------------------------------------------------------------------
@@ -133,7 +133,6 @@ namespace Genetic_Algorithm
         //---------------------------------------------------------------------------------------------------------
         private void initNodePosition()
         {
-            // random 으로 노드의 위치를 생성한다.
             char name ;
             var g = GameSystem.instance;
 
@@ -309,7 +308,7 @@ namespace Genetic_Algorithm
                 }
 
                 imsi = gene[pos1];
-                gene[pos1] = gene[pos2];        // 두개 노드의 위치를 바꾼다. 
+                gene[pos1] = gene[pos2];        // 두 개 노드의 위치를 바꾼다. 
                 gene[pos2] = imsi;
             }
         }
